@@ -1,0 +1,143 @@
+<?php
+
+/**
+ * @file
+ * Short file description here.
+ *
+ * Long description here.
+ */
+/**
+ * Implements hook_styleguide().
+ *
+ * Display a standard link and a word with emphasis. Theme an image.
+ */
+function styleguide_tweaks_styleguide() {
+
+  /*** ************
+   *   my stuff  * 
+   * *************/
+
+  $items['solr_facet'] = array(
+    'title' => t('Solr Facet'),/*{{{*/
+    'content' => '<div id="block-islandora-solr-basic-facets" class="block block--islandora-solr  block-islandora-solr-basic-facets contextual-links-region has-icon block--islandora-solr-basic-facets">
+    <h2 class="block__title"><i class="fa fa-gear" aria-hidden="true"></i>Refine your search</h2>
+    <div class="block__content">
+    <div class="islandora-solr-facet-wrapper">
+    <h3>RELS_EXT_hasModel_uri_ms</h3>
+
+    <ul class="islandora-solr-facet">
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3ApageCModel%22">info:fedora/islandora:pageCModel</a> <span class="count">(52)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3ApageCModel%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3ApageCModel%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_basic_image%22">info:fedora/islandora:sp_basic_image</a> <span class="count">(16)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_basic_image%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_basic_image%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_pdf%22">info:fedora/islandora:sp_pdf</a> <span class="count">(5)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_pdf%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_pdf%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AcollectionCModel%22">info:fedora/islandora:collectionCModel</a>
+    <span class="count">(3)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AcollectionCModel%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AcollectionCModel%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AbookCModel%22">info:fedora/islandora:bookCModel</a> <span class="count">(2)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AbookCModel%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AbookCModel%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AgovdocsCModel%22">info:fedora/islandora:govdocsCModel</a> <span class="count">(2)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AgovdocsCModel%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3AgovdocsCModel%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_large_image_cmodel%22">info:fedora/islandora:sp_large_image_cmodel</a>          <span class="count">(2)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_large_image_cmodel%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_large_image_cmodel%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    <li>
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_strict_pdf%22">info:fedora/islandora:sp_strict_pdf</a> <span class="count">(2)</span>
+    <span class="plusminus">
+    <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_strict_pdf%22" class="plus jquery-once-2-processed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>        <a rel="nofollow" href="/islandora/search/test?type=dismax&amp;islandora_solr_search_navigation=0&amp;f[0]=-RELS_EXT_hasModel_uri_ms%3A%22info%5C%3Afedora%5C/islandora%5C%3Asp_strict_pdf%22" class="minus jquery-once-2-processed"><i class="fa fa-search-minus" aria-hidden="true"></i></a>      </span>
+    </li>
+    </ul>
+
+    </div>
+    </div>
+    </div>',
+
+'group' => t('Robs Custom Stuff'),/*}}}*/
+);
+
+//$items['config-menu'] = array(
+//'title' => t('Collection Page Nav Bar'),
+//'content' => '<ul class="collection-navigation--items">
+//<li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+//<li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+//<li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+//<li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+//<li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+//</ul>',
+
+//'group' => t('Robs Custom Stuff'),
+//);
+$items['config-dropdown'] = array(
+  'title' => t('Config Menu Dropdown'),/*{{{*/
+  'content' => '<h1>Sample page title</h1><div class="config-dropdown">
+  <span class="config-dropdown__button js-config-dropdown__button"><i class="fa fa-cogs" aria-hidden="true"></i>
+</span><h2 class="element-invisible">Configuration Menu</h2><ul class="config-dropdown__menu"><li class="config-dropdown__menu__item active"><a href="/imagined/welcome" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+  <li class="config-dropdown__menu__item"><a href="/node/57/edit">Edit</a></li>
+  <li class="config-dropdown__menu__item"><a href="/node/57/display">Manage display</a></li>
+  <li class="config-dropdown__menu__item"><a href="/node/57/outline">Outline</a></li>
+  <li class="config-dropdown__menu__item"><a href="/node/57/devel">Devel</a></li>
+  </ul>    </div>',   
+  'group' => t('Robs Custom Stuff'),/*}}}*/
+  );
+$items['collection_page_navigation'] = array(
+  'title' => t('Collection Page Nav Bar'),/*{{{*/
+  'content' => '<ul class="collection-navigation--items">
+  <li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+  <li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+  <li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+  <li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+  <li class="collection-navigation--item"><a href="#" class="collection-navigation--item--link">link</a></li>
+  </ul>',
+
+'group' => t('Robs Custom Stuff'),/*}}}*/
+);
+$items['islandora_search'] = array(
+  'title' => t('Islandora Search'),/*{{{*/
+  'content' => '<div class="simpleSearch header__search">
+  <form class="islandora-solr-simple-search-form" action="/admin/appearance/styleguide" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
+  <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text">
+  </div>
+  <input type="submit" id="edit-submit--4" name="op" value="" class="form-submit button button--primary"></div><input type="hidden" name="form_build_id" value="form-gw27k38r0-IMpRFcBfrmPirivQy7Dmv0jTuqS5tNBaM">
+  <input type="hidden" name="form_token" value="o4XGrCs_voxK5lmvzKxN9MmhfNYPxCuNRgX_-VVa5ak">
+  <input type="hidden" name="form_id" value="islandora_solr_simple_search_form">
+  </div></form>  </div>',
+'group' => t('Robs Custom Stuff'),
+);/*}}}*/
+
+/*** *******************
+ *   end of my stuff  * 
+ * ********************/
+
+return $items;
+}
+
+/**
+ * Implements hook_styleguide_alter().
+ */
+function styleguide_tweaks_styleguide_alter(&$items) {
+  //// Add a class to the text test.
+  //$items['text']['content'] = '<div class="mytestclass">' . $items['text']['content'] . '</div>';
+  //// Remove the table item.
+  //unset($items['table']);
+}
